@@ -1,0 +1,43 @@
+/* src/components/Flashcards.css */
+.flashcards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1f2833;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .flashcard-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-lang {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: #28f0ceba;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-lang:hover {
+    background-color: #218838;
+  }
+  

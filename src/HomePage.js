@@ -14,6 +14,10 @@ const HomePage = () => {
   const handleStartCoding = () => {
     navigate('/code-editor');
   };
+
+  const handlestartlearning = () => {
+    navigate('/FlashCards');
+  };
   
   return (
     <Container fluid className="homepage-container bg-grey text-center" style={{ color: '#66FCF1' }}>
@@ -27,7 +31,7 @@ const HomePage = () => {
           </p>
           <div className="buttons-section mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center">
             <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg" onClick={handleStartCoding} >Start Coding</Button>
-            <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg">Start Learning</Button>
+            <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg"onClick={handlestartlearning}>Start Learning</Button>
             <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg" onClick={handleCreateFlashcards}>View Flashcards</Button>
 
           </div>
@@ -126,7 +130,7 @@ const HomePage = () => {
           <Card className="team-card">
             <Card.Img 
               variant="top" 
-              src="/B.jpg" 
+             
               style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
             />
             <Card.Body>
@@ -138,7 +142,7 @@ const HomePage = () => {
           <Card className="team-card">
             <Card.Img 
               variant="top" 
-              src="/H.jpg" 
+              
               style={{ width: '100%', height: '200px', objectFit: 'cover' }} 
             />
             <Card.Body>
