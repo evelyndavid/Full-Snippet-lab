@@ -3,10 +3,16 @@ import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  
   const navigate = useNavigate(); 
 
   const handleCreateFlashcards = () => {
     navigate('/create'); 
+  };
+  
+
+  const handleStartCoding = () => {
+    navigate('/code-editor');
   };
   
   return (
@@ -20,7 +26,7 @@ const HomePage = () => {
             Snippet Lab allows users to write and run code in multiple programming languages using a built-in code editor where they can view the output instantly. Users can share their code and results through links or as PDFs. It also has special features like a flashcards section where users can learn programming concepts like syntax, commands, and functions, and they can create and save their own flashcards.
           </p>
           <div className="buttons-section mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center">
-            <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg">Start Coding</Button>
+            <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg" onClick={handleStartCoding} >Start Coding</Button>
             <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg">Start Learning</Button>
             <Button variant="outline-info" className="mb-2 mb-md-0 me-md-2" size="lg" onClick={handleCreateFlashcards}>View Flashcards</Button>
 
@@ -38,7 +44,7 @@ const HomePage = () => {
           <Card className="text-white bg-dark mb-4">
             <Card.Body>
               <iframe 
-                style={{ width: '100%', height: '250px' }} 
+                style={{ width: '100%', height: '500px' }} 
                 src="/org1.mp4" 
                 title="C Programming" 
                 frameBorder="0" 
@@ -58,7 +64,7 @@ const HomePage = () => {
           <Card className="text-white bg-dark mb-4">
             <Card.Body>
               <iframe 
-                style={{ width: '100%', height: '250px' }} 
+                style={{ width: '100%', height: '500px' }} 
                 src="/org1.mp4" 
                 title="Java Programming" 
                 frameBorder="0" 
@@ -78,7 +84,7 @@ const HomePage = () => {
           <Card className="text-white bg-dark mb-4">
             <Card.Body>
               <iframe 
-                style={{ width: '100%', height: '250px' }} 
+                style={{ width: '100%', height: '500px' }} 
                 src="/org1.mp4" 
                 title="Python Programming" 
                 frameBorder="0" 
@@ -98,7 +104,7 @@ const HomePage = () => {
           <Card className="text-white bg-dark mb-4">
             <Card.Body>
               <iframe 
-                style={{ width: '100%', height: '250px' }} 
+                style={{ width: '100%', height: '500px' }} 
                 src="/org1.mp4" 
                 title="C++ Programming" 
                 frameBorder="0" 

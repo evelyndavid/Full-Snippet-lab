@@ -154,3 +154,63 @@
   font-weight: bold;
   animation: bounce 2s infinite;
 }
+
+#share {
+
+  color: #171717;
+  /* Adjust text color as needed */
+  background-color: #FFFFFF;
+  /* Initial button color */
+  border: none;
+  padding: 5px 15px;
+  border-radius: 75px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#share:hover {
+  background-color: rgba(36, 253, 79, 0.801);
+  box-shadow: 0 4px 4px rgba(15, 15, 15, 0.8);
+}
+
+.styled {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+
+
+
+
+.custom-color {
+  background-color:  #282a36;
+  /* Your desired background color */
+}
+.form-select {
+border-radius: 0.5rem; /* Rounded borders */
+backdrop-filter: blur(10px); /* Blur effect */
+background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.form-select:hover,
+.form-select:focus {
+background-color: rgba(255, 255, 255, 1); /* Full opacity on hover/focus */
+border-color: #007bff; /* Change border color on hover/focus */
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+}

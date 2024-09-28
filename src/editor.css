@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#1F2833;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling for the dropdowns */
+select {
+    width: 150px; /* Adjust the width as needed */
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Hover and focus effects for the dropdowns */
+  select:hover,
+  select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.6);
+  }
+  
+  /* Option styles inside the dropdown */
+  select option {
+    background-color: #fff; /* Background for dropdown options */
+    color: #495057; /* Text color */
+  }
+  
+  /* Adjusting option background on selection */
+  select option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    select {
+      width: 100%; /* Full width on smaller devices */
+      margin-bottom: 10px;
+    }
+  }
+  .btn-success {
+    color: #171717;
+  /* Adjust text color as needed */
+  background-color: #FFFFFF;
+  /* Initial button color */
+  border: none;
+  padding: 5px 20px;
+  border-radius: 70px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, box-shadow 0.3s;            /* Pointer cursor on hover */
+}
+
+.btn-success:hover {
+  background-color: rgba(36, 253, 79, 0.801);
+  box-shadow: 0 4px 4px rgba(15, 15, 15, 0.8);
+}
+.form-select {
+  border-radius: 0.5rem; /* Rounded borders */
+  backdrop-filter: blur(10px); /* Blur effect */
+  background-color: rgba(255, 255, 255, 1); /* Solid white background */
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08); /* Box shadow with 0.8 opacity */
+}
+
+.form-select:hover,
+.form-select:focus {
+  background-color: rgba(255, 255, 255, 1); /* Solid white on hover/focus */
+  border-color: #007bff; /* Change border color on hover/focus */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Stronger blue shadow effect */
+}
+
+.form-control
+{
+  border-color: #28f0ceba; /* Change border color on hover/focus */
+  box-shadow: 0 0 10px rgba(40, 240, 206, 0.9)
+  ;
+}
+#color
+{
+  background-color:#1F2833;
+  
+
+}

@@ -60,6 +60,7 @@ import Home from './HomePage.js';
 import CreateFlashcards from './CreateFlashcards';
 import './App.css';
 import LoadingScreen from './LoadingScreen.js';
+import CodeEditor from './CodeEditor';
 const App = () => {
   
   return (
@@ -71,6 +72,7 @@ const App = () => {
         <Route path="/Login" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/create" element={<CreateFlashcards />} />
+        <Route path="/code-editor" element={<CodeEditor />} /> {/* Add route for CodeEditor */}
       </Routes>
     </Router>
   );
